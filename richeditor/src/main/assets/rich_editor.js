@@ -145,6 +145,7 @@ RE.setTextBackgroundColor = function(color) {
 }
 
 RE.setFontSize = function(fontSize){
+    document.execCommand("styleWithCSS", null, true);
     document.execCommand("fontSize", false, fontSize);
 }
 
